@@ -36,7 +36,7 @@ public class Pills : MonoBehaviour
 
         if (other.tag == "Player")
         {
-            p.restoreHealth(pill.Heal());
+            p.StartRegen();
 
             Destroy(gameObject);
 

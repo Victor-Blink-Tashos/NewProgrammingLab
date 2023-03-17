@@ -20,6 +20,17 @@ public class Player : MonoBehaviour
         
     }
 
+    private void Awake()
+    {
+       
+        
+       
+    }
+
+    public void StartRegen()
+    {
+        StartCoroutine(HealthIncrease());
+    }
 
 
     public void restoreHealth(int heal)
@@ -31,6 +42,15 @@ public class Player : MonoBehaviour
     public int getHealth()
     {
         return health;
+    }
+
+    IEnumerator HealthIncrease()
+    {
+        for(int i = 1; i <= 5; i++)
+        {
+            restoreHealth(1);
+            yield return new WaitForSeconds(0.5f);
+        }
     }
 
 
