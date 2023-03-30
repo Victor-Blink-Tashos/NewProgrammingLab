@@ -140,6 +140,17 @@ public class PlayerMoves : MonoBehaviour
         }
     }
 
+
+    public void SaveData(ref Data data)
+    {
+        data.playerPosition = transform.position;
+    }
+
+    public void LoadData(Data data)
+    {
+        transform.position = data.playerPosition;
+    }
+
 }
 //features yet to be implemented
 
