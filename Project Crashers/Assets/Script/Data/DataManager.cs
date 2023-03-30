@@ -2,84 +2,67 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System.IO;
 
-public class DataManager : MonoBehaviour
+namespace SaveLoadSystem
 {
-    public static DataManager manager;
-
-    [Header("File Storage Config")]
-    [SerializeField] private string fileName;
-
-    // Encryption
-    [SerializeField] private bool useEncryption;
-
-    private FileHandler dataHandler;
-    private Data gameData;
-    private List<IData> dataPersistanceObjects;
-
-    private void Awake()
+    public static class DataManager
     {
-        if (manager == null)
+        public static Data CurrentSaveData = new Data();
+
+        public const string SaveDirectory = "/Info/";
+
+        public const string FileName = "SaveGame.sav";
+
+        public static readonly string keyWord = "E10";
+       
+        public static bool SaveGame()
         {
-            manager = this;
-        }
-        else
-        {
-            Debug.Log("Found more than one Data Persistance Manager in the scene");
-        }
+            var d = Application.persistentDataPath + SaveDirectory;
 
-        this.dataHandler = new FileHandler(Application.persistentDataPath, fileName, useEncryption);
-        this.dataPersistanceObjects = FindAllDataPersistanceObjects();
-        LoadGame();
-    }
+            if (!Directory.Exists(d))
+            {
+                Directory.CreateDirectory(d);
+            }
 
-    public void NewGame()
-    {
-        this.gameData = new Data();
-    }
+            string json = JsonUtility.ToJson(CurrentSaveData, true);
+            var encryptedJson = Encrypter(json);
+            File.WriteAllText(d + FileName, encryptedJson);
 
-    public void LoadGame()
-    {
-        this.gameData = dataHandler.Load();
+            GUIUtility.systemCopyBuffer = d;
 
-        if (this.gameData == null)
-        {
-            Debug.Log("No data was found! Initializing data to defaults.");
-            NewGame();
+            return true;
         }
 
-        // Push the loaded data to all other scripts which implememnts IDataPersistance interface
-        foreach (IData dataPersistanceObj in dataPersistanceObjects)
+        public static void LoadGame()
         {
-            dataPersistanceObj.LoadData(gameData);
+            string fullPath = Application.persistentDataPath + SaveDirectory + FileName;
+            Data tempData = new Data();
+
+            if (File.Exists(fullPath))
+            {
+                var json = File.ReadAllText(fullPath);
+                tempData = JsonUtility.FromJson<Data>(Encrypter(json));
+            }
+            else
+            {
+                Debug.LogError("Save file does not exist");
+            }
+
+            CurrentSaveData = tempData;
         }
 
-        // Debug.Log("Loaded score = " + gameData.score);
-    }
-
-    public void SaveGame()
-    {
-        foreach (IData dataPersistanceObj in dataPersistanceObjects)
+        private static string Encrypter(string data)
         {
-            dataPersistanceObj.SaveData(ref gameData);
+            string result = "";
+
+            for (int i = 0; i < data.Length; i++)
+            {
+                result += (char)(data[i] ^ keyWord[i % keyWord.Length]);
+            }
+
+            return result;
         }
-
-        dataHandler.Save(gameData);
-
-        // Debug.Log("Saved score = " + gameData.score);
     }
-
-    private void OnApplicationQuit()
-    {
-        SaveGame();
-    }
-
-    private List<IData> FindAllDataPersistanceObjects()
-    {
-        IEnumerable<IData> dataPersistanceObjects = FindObjectsOfType<MonoBehaviour>().OfType<IData>();
-
-        return new List<IData>(dataPersistanceObjects);
-    }
-
 
 }

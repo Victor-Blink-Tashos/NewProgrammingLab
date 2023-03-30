@@ -1214,6 +1214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1770967902}
   - component: {fileID: 1770967901}
+  - component: {fileID: 1770967903}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -1250,6 +1251,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1770967903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770967900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a69641bbef2902468f9cbfcec453954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: E10.sav
+  useEncryption: 0
 --- !u!1 &1972147619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,9 +1474,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trans: {fileID: 664782830}
+  dm: {fileID: 1770967903}
   moveSpeed: 8
   jumpforce: 5
   isGrounded: 0
+  player: {fileID: 1097709343981725632}
 --- !u!114 &1097709343981725632
 MonoBehaviour:
   m_ObjectHideFlags: 0

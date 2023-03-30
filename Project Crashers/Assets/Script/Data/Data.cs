@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[System.Serializable]
 
-public class Data : MonoBehaviour
+
+namespace SaveLoadSystem
 {
-    public int health;
-    public Vector3 playerPosition;
-
-    // Game starts with default values when there's no data to load
-    public Data()
+    [System.Serializable]
+    public class Data
     {
-        this.health = 0;
-        this.playerPosition = new Vector3(0, 3.5f, 0);
+        public PData Pdata = new PData();
+
+       
+
     }
 }

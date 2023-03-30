@@ -1,11 +1,15 @@
+using SaveLoadSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMoves : MonoBehaviour
 {
+    private PData MyData = new PData();
 
     [SerializeField] Transform trans;
+
+    
 
     [SerializeField] float moveSpeed;
 
@@ -17,6 +21,10 @@ public class PlayerMoves : MonoBehaviour
 
     private Rigidbody body;
 
+    public Player player;
+
+
+   
 
 
 
@@ -66,11 +74,33 @@ public class PlayerMoves : MonoBehaviour
 
             body.AddForce(Vector3.up * jumpforce, ForceMode.Impulse);
 
+        }
 
+
+
+
+      
+    }
+
+    private void LateUpdate()
+    {
+        DataGathering();
+
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            DataManager.CurrentSaveData.Pdata = MyData;
+            DataManager.SaveGame();
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            DataManager.LoadGame();
+            MyData = DataManager.CurrentSaveData.Pdata;
+
+            transform.position = MyData.dPosition;
+            player.health = MyData.dHealth;
 
         }
     }
-
 
     void walk()
     {
@@ -140,16 +170,23 @@ public class PlayerMoves : MonoBehaviour
         }
     }
 
-
-    public void SaveData(ref Data data)
+   
+    void DataGathering()
     {
-        data.playerPosition = transform.position;
+        MyData.dPosition = transform.position;
+        MyData.dHealth = player.health;
+
     }
 
-    public void LoadData(Data data)
-    {
-        transform.position = data.playerPosition;
-    }
+
+
+}
+
+[System.Serializable]
+public struct PData
+{
+    public Vector3 dPosition;
+    public int dHealth;
 
 }
 //features yet to be implemented
