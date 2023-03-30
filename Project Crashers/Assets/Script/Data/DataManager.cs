@@ -80,4 +80,6 @@ public class DataManager : MonoBehaviour
 
         return new List<IData>(dataPersistanceObjects);
     }
+
+
 }
