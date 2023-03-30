@@ -1,398 +1,549 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1678480812704572, "dur": 250748, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1678480812704790, "dur": 2261, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1678480812707053, "dur": 246607, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1678480812953667, "dur": 1652, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1678480812955988, "dur": 12, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680215923631163, "dur": 1659169, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680215923631373, "dur": 13611, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680215923644987, "dur": 32927, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680215923677916, "dur": 641233, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680215924319151, "dur": 958217, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680215925277370, "dur": 12961, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680215925290913, "dur": 20, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1680215924153868, "dur": 133751, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1680215924154819, "dur": 35925, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1680215924273616, "dur": 4020, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1680215924277640, "dur": 9973, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1680215924278233, "dur": 8623, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1680215924291437, "dur": 1114, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1680215924290730, "dur": 1845, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680215925291005, "dur": 160, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1678480812743682, "dur":1931, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812745622, "dur":246, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1678480812745883, "dur":14, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1678480812745898, "dur":1081, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1678480812747076, "dur":923, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812747999, "dur":0, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812923977, "dur":303, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924280, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924287, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924290, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924296, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924297, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924301, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924302, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924306, "dur":12, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924318, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924323, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924324, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924328, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924329, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924334, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924335, "dur":22, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924357, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924358, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924362, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924363, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924368, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924369, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924374, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924375, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924379, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924380, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924384, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924385, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924391, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924392, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924397, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924398, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924403, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924422, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812924444, "dur":2235, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1678480812749700, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1678480812749700, "dur":3857, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1678480812753557, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1678480812753698, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1678480812753787, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":1, "ts":1678480812753914, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1678480812754058, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1678480812754188, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1678480812754291, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1678480812754406, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1678480812754521, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1678480812754628, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1678480812754741, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1678480812754867, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1678480812754961, "dur":122875, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1678480812877837, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1678480812877890, "dur":46096, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1678480812748515, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1678480812748516, "dur":5077, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1678480812753593, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1678480812753762, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1678480812753874, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1678480812753977, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1678480812754091, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1678480812754205, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1678480812754332, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1678480812754439, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1678480812754538, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1678480812754647, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1678480812754760, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1678480812754886, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1678480812754972, "dur":26606, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":2, "ts":1678480812781580, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1678480812781680, "dur":142293, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1678480812748673, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1678480812748673, "dur":4886, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1678480812753560, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":3, "ts":1678480812753713, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1678480812753813, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers.exe" }}
-,{ "pid":12345, "tid":3, "ts":1678480812753916, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1678480812754033, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1678480812754123, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1678480812754236, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1678480812754367, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1678480812754481, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1678480812754590, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1678480812754693, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":3, "ts":1678480812754800, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1678480812754956, "dur":45661, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":3, "ts":1678480812800618, "dur":77168, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1678480812877789, "dur":46202, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1678480812749407, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1678480812749407, "dur":4195, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1678480812753602, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1678480812753747, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1678480812753847, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1678480812753963, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1678480812754083, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1678480812754198, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1678480812754312, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1678480812754417, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1678480812754528, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1678480812754635, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1678480812754747, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1678480812754879, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1678480812754962, "dur":168915, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":4, "ts":1678480812923878, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1678480812923943, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":4, "ts":1678480812923943, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1678480812748195, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1678480812748196, "dur":5310, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1678480812753506, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":5, "ts":1678480812753665, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1678480812753751, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":5, "ts":1678480812753884, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1678480812753993, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1678480812754116, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1678480812754241, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1678480812754369, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1678480812754482, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1678480812754582, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1678480812754688, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1678480812754792, "dur":162, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1678480812754955, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1678480812755065, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1678480812755153, "dur":713, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":5, "ts":1678480812755866, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1678480812755925, "dur":26806, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":5, "ts":1678480812782732, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1678480812782790, "dur":141191, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1678480812748268, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1678480812748269, "dur":5344, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1678480812753613, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":6, "ts":1678480812753741, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1678480812753834, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1678480812753948, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1678480812754070, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1678480812754191, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1678480812754295, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1678480812754409, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1678480812754520, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1678480812754631, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1678480812754746, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1678480812754874, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1678480812754966, "dur":47807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":6, "ts":1678480812802777, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1678480812802901, "dur":121087, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1678480812750341, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1678480812750342, "dur":3257, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1678480812753600, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1678480812753742, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1678480812753838, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1678480812754060, "dur":169, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1678480812754230, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1678480812754364, "dur":246, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1678480812754611, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1678480812754728, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1678480812754848, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1678480812754950, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1678480812755055, "dur":36322, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":7, "ts":1678480812791378, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1678480812791452, "dur":132545, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1678480812748484, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1678480812748484, "dur":5019, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1678480812753505, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1678480812753638, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1678480812753728, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":8, "ts":1678480812753833, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1678480812753941, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1678480812754063, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1678480812754183, "dur":123730, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":8, "ts":1678480812877913, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1678480812877951, "dur":46027, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812748653, "dur":18, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812748671, "dur":4887, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812753558, "dur":508, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":9, "ts":1678480812754067, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812754187, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1678480812754344, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812754464, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1678480812754574, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812754667, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1678480812754772, "dur":191, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812754963, "dur":1009, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":9, "ts":1678480812755973, "dur":287, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812756261, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":9, "ts":1678480812756321, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812756365, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":9, "ts":1678480812756406, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812756445, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":9, "ts":1678480812756487, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812756552, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":9, "ts":1678480812756624, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812756672, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":9, "ts":1678480812756738, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812758521, "dur":3079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":9, "ts":1678480812761639, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":9, "ts":1678480812761684, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1678480812761691, "dur":1743, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":9, "ts":1678480812763488, "dur":160487, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812749922, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812749922, "dur":3671, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812753594, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":10, "ts":1678480812753718, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812753814, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":10, "ts":1678480812753918, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812754055, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1678480812754176, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812754276, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1678480812754391, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812754500, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1678480812754619, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812754731, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1678480812754853, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812754953, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1678480812755057, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812755152, "dur":722, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":10, "ts":1678480812755874, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812755932, "dur":570, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":10, "ts":1678480812756502, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812756563, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":10, "ts":1678480812756618, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812756660, "dur":121121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":10, "ts":1678480812877782, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1678480812877838, "dur":46147, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1678480812748878, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1678480812748879, "dur":4623, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1678480812753505, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":11, "ts":1678480812753653, "dur":216, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1678480812753870, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1678480812753966, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1678480812754098, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1678480812754213, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1678480812754336, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1678480812754524, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1678480812754631, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1678480812754752, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1678480812754880, "dur":245, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1678480812755125, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1678480812755220, "dur":28193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":11, "ts":1678480812783414, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1678480812783496, "dur":140483, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1678480812749317, "dur":10, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1678480812749327, "dur":4229, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1678480812753556, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":12, "ts":1678480812753698, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1678480812753781, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":12, "ts":1678480812753896, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1678480812753999, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1678480812754102, "dur":169, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1678480812754272, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1678480812754387, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1678480812754498, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1678480812754614, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1678480812754724, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1678480812754831, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1678480812754959, "dur":77497, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":12, "ts":1678480812832457, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1678480812832537, "dur":91434, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1678480812749034, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1678480812749035, "dur":4469, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1678480812753506, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":13, "ts":1678480812753627, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1678480812753743, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":13, "ts":1678480812753861, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1678480812753957, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1678480812754089, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1678480812754204, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1678480812754328, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1678480812754441, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1678480812754541, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1678480812754652, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1678480812754764, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1678480812754947, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1678480812755049, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1678480812755141, "dur":73167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":13, "ts":1678480812828309, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1678480812828408, "dur":95573, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812748013, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812748014, "dur":5483, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812753505, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":14, "ts":1678480812753509, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812753618, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/app.info" }}
-,{ "pid":12345, "tid":14, "ts":1678480812753620, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812753708, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":14, "ts":1678480812753811, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812753907, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812754011, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812754105, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812754235, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812754359, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812754471, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812754578, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812754691, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812754804, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812754957, "dur":150, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812755108, "dur":857, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812755965, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756023, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756065, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756101, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756135, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756168, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756202, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756236, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756272, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756306, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756344, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756379, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756436, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756471, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756509, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756554, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756595, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756631, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756670, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756708, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":14, "ts":1678480812756772, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812758512, "dur":3243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":14, "ts":1678480812761802, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":14, "ts":1678480812761847, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1678480812761857, "dur":1787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":14, "ts":1678480812763685, "dur":160292, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1678480812749641, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1678480812749641, "dur":3955, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1678480812753598, "dur":172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":15, "ts":1678480812753770, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1678480812753872, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1678480812753978, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1678480812754103, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1678480812754230, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1678480812754354, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1678480812754471, "dur":486, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1678480812754958, "dur":83229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":15, "ts":1678480812838189, "dur":39624, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1678480812877815, "dur":46179, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812750204, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812750205, "dur":3354, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812753559, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":16, "ts":1678480812753711, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812753799, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":16, "ts":1678480812753915, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812754050, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812754149, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812754247, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812754376, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812754488, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812754607, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812754709, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812754818, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812754959, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812755115, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812755243, "dur":761, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756004, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756050, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756091, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756123, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756160, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756192, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756227, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756263, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756301, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756339, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756376, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756410, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756449, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756490, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756539, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756573, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756619, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756663, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756841, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812756892, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":16, "ts":1678480812757012, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812757056, "dur":1953, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":16, "ts":1678480812759010, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812759069, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/level0.resS" }}
-,{ "pid":12345, "tid":16, "ts":1678480812759178, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812759195, "dur":2245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/level0.resS" }}
-,{ "pid":12345, "tid":16, "ts":1678480812761486, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/level0" }}
-,{ "pid":12345, "tid":16, "ts":1678480812761532, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812761540, "dur":1242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/level0" }}
-,{ "pid":12345, "tid":16, "ts":1678480812762848, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Desktop/School Items/Winter 2023/Programming/Crashers/Project Crashers_Data/Project Crashers_Data/boot.config" }}
-,{ "pid":12345, "tid":16, "ts":1678480812763066, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1678480812763199, "dur":160775, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1678480812928420, "dur":1533, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1678480812956110, "dur": 838, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1678480812955971, "dur": 1007, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1680215924355664, "dur":1397, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215924357069, "dur":53, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1680215924357133, "dur":14, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1680215924357148, "dur":501, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1680215924357665, "dur":618, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215924358283, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245019, "dur":294, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245313, "dur":27, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245340, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245343, "dur":16, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245359, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245361, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245371, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245372, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245378, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245379, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245386, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245387, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245393, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245395, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245401, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245402, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245408, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245409, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245417, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245419, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245425, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245427, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245432, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245434, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245439, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245440, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245445, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245446, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245452, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245454, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245460, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245461, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245467, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245473, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925245581, "dur":1729, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1680215924358260, "dur":51, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924358312, "dur":4169, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924362489, "dur":284, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1680215924362777, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924369913, "dur":93728, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1680215924463723, "dur":41453, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers.exe" }}
+,{ "pid":12345, "tid":1, "ts":1680215924505179, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924505185, "dur":1823, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers.exe" }}
+,{ "pid":12345, "tid":1, "ts":1680215924507076, "dur":17201, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924524282, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924524293, "dur":4622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924529035, "dur":20125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924549169, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924549182, "dur":6339, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924555643, "dur":17036, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924572687, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924572701, "dur":1453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924574193, "dur":27310, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924601507, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924601514, "dur":1026, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924602596, "dur":18257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924620859, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924620869, "dur":1173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924622092, "dur":21182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924643279, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924643287, "dur":1233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924644562, "dur":29320, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924673891, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924673907, "dur":3799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924677750, "dur":21720, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924699490, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924699529, "dur":1060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924700622, "dur":55302, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924755932, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924755950, "dur":1919, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924757926, "dur":59458, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924817392, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215924817406, "dur":1476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215924818926, "dur":278772, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215925097771, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1680215925097787, "dur":2381, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1680215925100201, "dur":144828, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924358181, "dur":109, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924358290, "dur":4189, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924362488, "dur":29181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1680215924391676, "dur":23, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924391954, "dur":72985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":2, "ts":1680215924465006, "dur":15625, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924480638, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924481825, "dur":2324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924484186, "dur":20764, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924504957, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924504968, "dur":2943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924507952, "dur":15538, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924523499, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924523512, "dur":1137, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924524686, "dur":48009, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924572701, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924572712, "dur":1477, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924574233, "dur":42610, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924616847, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924616856, "dur":977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924617869, "dur":26379, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924644254, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924644263, "dur":1259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924645558, "dur":14298, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924659861, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924659872, "dur":1627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924661563, "dur":24509, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924686079, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924686092, "dur":5177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924691312, "dur":34605, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924725924, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924725933, "dur":2246, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924728235, "dur":61753, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924789995, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924790004, "dur":7471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924797535, "dur":45617, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924843157, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924843165, "dur":3263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924846469, "dur":90914, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924937387, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215924937398, "dur":1446, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215924938891, "dur":120473, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215925059369, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1680215925059379, "dur":1430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1680215925060852, "dur":184160, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680215924358213, "dur":84, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680215924358297, "dur":4202, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680215924362499, "dur":257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1680215924362762, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680215924364444, "dur":9592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1680215924374098, "dur":413499, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680215924787605, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680215924787616, "dur":32987, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680215924820801, "dur":140584, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680215924961397, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680215924961417, "dur":1043, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680215924962495, "dur":279972, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680215925242471, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1680215925242479, "dur":2468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1680215925244984, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":3, "ts":1680215925244985, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924358262, "dur":53, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924358315, "dur":4176, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924362492, "dur":8323, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1680215924370820, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924370891, "dur":3166, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":4, "ts":1680215924374117, "dur":121521, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1680215924495643, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924495653, "dur":1804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1680215924497522, "dur":27038, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924524564, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924524571, "dur":4528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924529154, "dur":46490, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924575650, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924575660, "dur":1144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924576841, "dur":15657, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924592504, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924592514, "dur":965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924593513, "dur":17622, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924611142, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924611153, "dur":1099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924612294, "dur":42368, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924654668, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924654681, "dur":2271, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924656997, "dur":16815, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924673821, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924673839, "dur":8059, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924681936, "dur":40466, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924722408, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924722439, "dur":2797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924725284, "dur":134032, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924859322, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924859334, "dur":1692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924861069, "dur":71567, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924932643, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215924932661, "dur":26706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215924959414, "dur":84533, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215925043956, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1680215925044079, "dur":1367, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1680215925045482, "dur":199532, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680215924358253, "dur":54, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680215924358308, "dur":4184, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680215924362492, "dur":265, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1680215924362761, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680215924364213, "dur":363729, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1680215924728028, "dur":302005, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680215925030040, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1680215925030052, "dur":1641, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1680215925031731, "dur":213289, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215924358211, "dur":83, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215924358294, "dur":4191, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215924362489, "dur":8770, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1680215924371264, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215924371284, "dur":2581, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1680215924373923, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1680215924374105, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215924374114, "dur":258169, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1680215924632343, "dur":19656, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680215924652010, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215924652025, "dur":1147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680215924653208, "dur":16653, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680215924669868, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215924669879, "dur":6906, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680215924676865, "dur":33941, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680215924710811, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215924710822, "dur":1504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680215924712413, "dur":191376, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680215924903795, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215924903805, "dur":33311, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680215924937150, "dur":59649, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680215924996803, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215924996812, "dur":8443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1680215925005305, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":6, "ts":1680215925005448, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215925006507, "dur":1432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":6, "ts":1680215925007983, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":6, "ts":1680215925008032, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215925008106, "dur":985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":6, "ts":1680215925009124, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1680215925009161, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215925009167, "dur":1721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":6, "ts":1680215925010934, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1680215925011085, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215925011093, "dur":886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1680215925012010, "dur":6392, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1680215925018407, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215925018417, "dur":1514, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1680215925019971, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/boot.config" }}
+,{ "pid":12345, "tid":6, "ts":1680215925020076, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1680215925020081, "dur":823, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/boot.config" }}
+,{ "pid":12345, "tid":6, "ts":1680215925020947, "dur":224074, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680215924358232, "dur":70, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680215924358302, "dur":4180, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680215924362488, "dur":9338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1680215924371832, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680215924371859, "dur":2047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1680215924373973, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1680215924374126, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680215924374149, "dur":95095, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1680215924469372, "dur":42857, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680215924512234, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680215924512245, "dur":1905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680215924514198, "dur":156830, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680215924671034, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680215924671045, "dur":5210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680215924676295, "dur":122636, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680215924798936, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680215924798948, "dur":2408, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680215924801389, "dur":107938, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680215924909337, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680215924909352, "dur":29091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680215924938483, "dur":143314, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680215925081804, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1680215925081814, "dur":1539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1680215925083390, "dur":161644, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924358289, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924358290, "dur":4199, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924362489, "dur":8834, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1680215924371328, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924371406, "dur":2625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1680215924374091, "dur":158343, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924532440, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924532512, "dur":22118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924554691, "dur":45359, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924600055, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924600065, "dur":1222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924601323, "dur":13971, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924615299, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924615308, "dur":1289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924616644, "dur":25089, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924641741, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924641752, "dur":1223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924643028, "dur":17408, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924660442, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924660494, "dur":4255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924664787, "dur":18964, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924683756, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924683768, "dur":926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924684739, "dur":41341, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924726085, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924726094, "dur":2078, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924728228, "dur":1034, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924729266, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924729275, "dur":1851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924731192, "dur":26969, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924758188, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924758201, "dur":24457, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924782700, "dur":35462, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924818168, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924818180, "dur":3288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924821504, "dur":106864, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924928386, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215924928442, "dur":7891, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215924936379, "dur":171348, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215925107730, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1680215925107736, "dur":1530, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":8, "ts":1680215925109288, "dur":135731, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924358283, "dur":2, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924358285, "dur":4188, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924362488, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":9, "ts":1680215924362490, "dur":286, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924362782, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/app.info" }}
+,{ "pid":12345, "tid":9, "ts":1680215924362786, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924463063, "dur":11028, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/app.info" }}
+,{ "pid":12345, "tid":9, "ts":1680215924474093, "dur":42414, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924516519, "dur":20, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924516562, "dur":1864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924518463, "dur":34852, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924553322, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924553337, "dur":12862, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924566242, "dur":78197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924644443, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924644450, "dur":1678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924646262, "dur":18004, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924664271, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924664281, "dur":12322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924676648, "dur":17654, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924694307, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924694316, "dur":891, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924695270, "dur":22269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924717546, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924717558, "dur":1539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924719139, "dur":60407, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924779555, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924779572, "dur":12094, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924791735, "dur":30134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924821877, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924821886, "dur":833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924822755, "dur":154393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924977157, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215924977171, "dur":1355, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215924978658, "dur":157349, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215925136011, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1680215925136020, "dur":807, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":9, "ts":1680215925136859, "dur":108164, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680215924358314, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680215924358314, "dur":4169, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680215924362488, "dur":292, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1680215924362782, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680215924376483, "dur":87169, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1680215924463727, "dur":212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":10, "ts":1680215924463943, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680215924464264, "dur":20891, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":10, "ts":1680215924485291, "dur":97382, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215924582680, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680215924582691, "dur":1193, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215924583920, "dur":15975, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215924599901, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680215924599912, "dur":1195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215924601143, "dur":12937, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215924614085, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680215924614097, "dur":932, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215924615059, "dur":40649, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215924655714, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680215924655725, "dur":1693, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215924657457, "dur":101736, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215924759197, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680215924759205, "dur":35914, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215924795159, "dur":27410, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215924822574, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680215924822585, "dur":21769, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215924844402, "dur":262634, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215925107042, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1680215925107050, "dur":1360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1680215925108435, "dur":136592, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215924358333, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215924358334, "dur":4153, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215924362488, "dur":293, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":11, "ts":1680215924362785, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215924377070, "dur":86832, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":11, "ts":1680215924463975, "dur":60527, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680215924524506, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215924524513, "dur":1640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680215924526198, "dur":150309, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680215924676511, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215924676518, "dur":6047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680215924682647, "dur":22904, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680215924705558, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215924705586, "dur":1924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680215924707544, "dur":137218, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680215924844768, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215924844779, "dur":2550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680215924847383, "dur":167649, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680215925015038, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215925015047, "dur":1070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":11, "ts":1680215925016155, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/level0.resS" }}
+,{ "pid":12345, "tid":11, "ts":1680215925016200, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215925016207, "dur":849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/level0.resS" }}
+,{ "pid":12345, "tid":11, "ts":1680215925017086, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/level0" }}
+,{ "pid":12345, "tid":11, "ts":1680215925017119, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215925017128, "dur":682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/level0" }}
+,{ "pid":12345, "tid":11, "ts":1680215925017840, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":11, "ts":1680215925017874, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215925017929, "dur":1699, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":11, "ts":1680215925019685, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":11, "ts":1680215925019744, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1680215925019768, "dur":826, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":11, "ts":1680215925020633, "dur":224384, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680215924358359, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680215924358359, "dur":4151, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680215924362510, "dur":316, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1680215924362828, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680215924382674, "dur":91103, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1680215924473835, "dur":29199, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924503043, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680215924503057, "dur":8645, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924511737, "dur":17005, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924528749, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680215924528786, "dur":1088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924529907, "dur":64207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924594117, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680215924594125, "dur":2325, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924596526, "dur":61182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924657712, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680215924657721, "dur":1042, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924658833, "dur":99663, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924758503, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680215924758515, "dur":33081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924791657, "dur":53790, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924845451, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680215924845458, "dur":1601, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924847129, "dur":70151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924917289, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680215924917306, "dur":21719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215924939073, "dur":124900, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215925063980, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1680215925063990, "dur":1004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":12, "ts":1680215925065039, "dur":179996, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1680215924358382, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1680215924358382, "dur":4121, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1680215924362503, "dur":8862, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":13, "ts":1680215924371370, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1680215924371537, "dur":2454, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":13, "ts":1680215924374043, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":13, "ts":1680215924374233, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1680215924374239, "dur":92341, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":13, "ts":1680215924466668, "dur":38377, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1680215924505049, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1680215924505353, "dur":7005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1680215924512408, "dur":103543, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1680215924615956, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1680215924615972, "dur":1291, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1680215924617312, "dur":41170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1680215924658616, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1680215924658626, "dur":22307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1680215924681194, "dur":77745, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1680215924758943, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1680215924758950, "dur":37242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1680215924796236, "dur":88246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":13, "ts":1680215924884493, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1680215924884507, "dur":54753, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":13, "ts":1680215924939302, "dur":115916, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":13, "ts":1680215925055225, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1680215925055238, "dur":1867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":13, "ts":1680215925057140, "dur":187875, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1680215924358405, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1680215924358406, "dur":4131, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1680215924362537, "dur":9150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":14, "ts":1680215924371691, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1680215924371710, "dur":2298, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":14, "ts":1680215924374060, "dur":40072, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":14, "ts":1680215924414138, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1680215924414398, "dur":50594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":14, "ts":1680215924465063, "dur":27412, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1680215924492497, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1680215924492745, "dur":1371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1680215924494150, "dur":30989, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1680215924525144, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1680215924525155, "dur":3751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1680215924528969, "dur":243486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":14, "ts":1680215924772462, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1680215924772472, "dur":20213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":14, "ts":1680215924792723, "dur":109807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":14, "ts":1680215924902537, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1680215924902551, "dur":33351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":14, "ts":1680215924935949, "dur":186269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":14, "ts":1680215925122223, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1680215925122231, "dur":1736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":14, "ts":1680215925124004, "dur":121012, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1680215924358424, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1680215924358425, "dur":4065, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1680215924362491, "dur":334, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":15, "ts":1680215924362827, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1680215924387635, "dur":77443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":15, "ts":1680215924465142, "dur":49672, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215924514818, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1680215924514849, "dur":920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215924515807, "dur":36444, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215924552257, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1680215924552268, "dur":2329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215924554635, "dur":88493, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215924643134, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1680215924643144, "dur":1802, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215924644987, "dur":120504, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215924765498, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1680215924765508, "dur":28758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215924794317, "dur":48112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215924842438, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1680215924842453, "dur":3833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215924846323, "dur":148199, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215924994528, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1680215924994540, "dur":1709, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215924996313, "dur":42675, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215925038995, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1680215925039009, "dur":2206, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":15, "ts":1680215925041255, "dur":203773, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1680215924358451, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1680215924358451, "dur":4035, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1680215924362489, "dur":279, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":16, "ts":1680215924362772, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1680215924369575, "dur":293330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":16, "ts":1680215924662971, "dur":22096, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1680215924685071, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1680215924685081, "dur":6142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1680215924691266, "dur":175304, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1680215924866576, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1680215924866589, "dur":66520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1680215924933186, "dur":161540, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":16, "ts":1680215925094731, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1680215925094739, "dur":933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/victo/OneDrive/Documents/GitHub/NewProgrammingLab/Project Crashers_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":16, "ts":1680215925095698, "dur":149333, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1680215925248604, "dur":1749, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1680215925291206, "dur": 489, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1680215925290902, "dur": 808, "ph": "X", "name": "Write chrome-trace events", "args": {} },
