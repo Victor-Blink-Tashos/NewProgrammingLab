@@ -9,7 +9,7 @@ public class PlayerMoves : MonoBehaviour
 
     [SerializeField] Transform trans;
 
-    
+
 
     [SerializeField] float moveSpeed;
 
@@ -24,28 +24,31 @@ public class PlayerMoves : MonoBehaviour
     public Player player;
 
 
-   
+    public bool fireA = false;
 
 
 
-    //[SerializeField] Transform weaponAppear;
+    [SerializeField] Transform weaponAppear;
 
-    //[SerializeField] float timeToNextShot;
+    [SerializeField] float timeToNextShot;
 
 
     //[SerializeField] GameObject lightWeapon;
     //[SerializeField] GameObject heavyWeapon;
 
-    //[SerializeField] GameObject spellShot;
+    [SerializeField] GameObject spellShot;
+    [SerializeField] GameObject fireShot;
 
-    //[SerializeField] float bulletSpeed;
+    [SerializeField] float bulletSpeed;
+    [SerializeField] float fireSpeed;
     //[SerializeField] float lightAttackSpeed;
     //[SerializeField] float heavyAttackSpeed;
 
-    //[SerializeField] float bulletDelay;
+    [SerializeField] float bulletDelay;
     //[SerializeField] float lightAttackLag;
     //[SerializeField] float heavyAttackLag;
 
+    
 
     //[SerializeField] float landingLag;
 
@@ -59,9 +62,9 @@ public class PlayerMoves : MonoBehaviour
 
         trans = GetComponent<Transform>();
 
-        
+
         body = GetComponent<Rigidbody>();
-        
+
     }
 
     // Update is called once per frame
@@ -76,10 +79,30 @@ public class PlayerMoves : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.Q) && Inventory.inventory.nonConsumableItemsController.GetPower("Flame").GetIsOwned() == true)
+        {
+            switchSpell();
+        }
+
+
+            if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot())
+        {
+
+            if (fireA == true)
+            {
+                shootFire();
+            }
+
+            else
+            {
+                shoot();
+            }
+            
+            
+        }
 
 
 
-      
     }
 
     private void LateUpdate()
@@ -108,33 +131,36 @@ public class PlayerMoves : MonoBehaviour
         {
             trans.position += transform.right * Time.deltaTime * moveSpeed; //  Time.deltaTime, it does not depend on the performance of your computer
             trans.rotation = Quaternion.Euler(0, 0, 0); // set the rotation of game object
-          
+
         }
         if (Input.GetKey(KeyCode.A))
         {
             trans.position += transform.right * Time.deltaTime * moveSpeed;
             trans.rotation = Quaternion.Euler(0, 180, 0); //change rotation to 180
-            
+
         }
 
         if (Input.GetKey(KeyCode.W))
         {
             trans.position += transform.right * Time.deltaTime * moveSpeed;
-            trans.rotation = Quaternion.Euler(0, 270, 0); 
+            trans.rotation = Quaternion.Euler(0, 270, 0);
 
         }
 
         if (Input.GetKey(KeyCode.S))
         {
             trans.position += transform.right * Time.deltaTime * moveSpeed;
-            trans.rotation = Quaternion.Euler(0, 90, 0); 
+            trans.rotation = Quaternion.Euler(0, 90, 0);
 
-        }
+         }
 
 
 
 
     }
+
+
+
 
     private void OnCollisionEnter(Collision collision) // detects when the 
                                                        //object collides with another object
@@ -158,6 +184,9 @@ public class PlayerMoves : MonoBehaviour
     }
 
 
+   
+
+
     private void OnCollisionExit(Collision collision)
     {
         if (collision.collider.tag == "Ground") // saying if the thing you're 
@@ -170,7 +199,53 @@ public class PlayerMoves : MonoBehaviour
         }
     }
 
-   
+
+    public void shoot()
+    {
+
+        Rigidbody rbBullet = Instantiate(spellShot, weaponAppear.position, Quaternion.Euler(new Vector3(0, 0, 0))).GetComponent<Rigidbody>();
+        rbBullet.velocity = this.transform.right * bulletSpeed;
+    }
+
+
+    public void switchSpell()
+    {
+         if(fireA == false)
+        {
+            fireA = true;
+        }
+
+        else
+        {
+            fireA = false;
+        }
+    }
+
+    public void shootFire()
+    {
+
+        Rigidbody rbBullet = Instantiate(fireShot, weaponAppear.position, Quaternion.Euler(new Vector3(0, 0, 0))).GetComponent<Rigidbody>();
+        rbBullet.velocity = this.transform.right * fireSpeed;
+    }
+
+    bool canShoot()
+    {
+        if (timeToNextShot < Time.realtimeSinceStartup)
+        {
+            timeToNextShot = Time.realtimeSinceStartup + bulletDelay;
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
+
+
+
+    }
+
+
     void DataGathering()
     {
         MyData.dPosition = transform.position;
@@ -196,29 +271,9 @@ public struct PData
 
 //}
 
-//void shoot()
-//{
-//  GameObject newBullet = Instantiate(spellShot, weaponAppear.position + new Vector3(1, 0, 0), this.transform.rotation) as GameObject;
-
-//Rigidbody bulletRB = newBullet.GetComponent<Rigidbody>();
-//bulletRB.velocity = this.transform.forward * bulletSpeed;
-//}
-
-//bool canShoot()
-//{
-//if (timeToNextShot < Time.realtimeSinceStartup)
-//{
-//timeToNextShot = Time.realtimeSinceStartup + bulletDelay;
-//return true;
-//}
-//else
-//{
-// return false;
-//}
+    
 
 
-
-//}
 
 
 
